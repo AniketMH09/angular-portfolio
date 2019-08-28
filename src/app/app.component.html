@@ -1,0 +1,289 @@
+<div class="main_body">
+<!-----------------------------------------------------NAV_BAR----------------------------------------------------->
+<div class="main_nav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link ts-scroll" href="#home" [class.active]="home">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ts-scroll" href="#about_me_page" [class.active]="about_me">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ts-scroll" href="#portfolio" [class.active]="portfoilo">PORTFOLIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ts-scroll" href="#skills" [class.active]="skills">SKILLS</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link ts-scroll" href="#contact" [class.active]="contact">CONTACT</a>
+      </li>
+      
+         </ul>
+    </div>
+</nav>
+
+<div class="up_arrow">
+              <span><a href="#home"><i class="fa fa-arrow-up down_arrow_icon"></i></a></span>
+           </div>
+ 
+ </div>
+<!---------------------------------------------------HOME------------------------------------------------------------>
+<div class="main_home" id="home">
+  <div class="main_home_data">
+      <div class="d-flex flex-column  mb-3">
+         <div class="p-2">
+           <span><i class="fa fa-facebook-official social mr-4"></i></span>
+           <span><i class="fa fa-twitter social mr-4"></i></span>
+           <span><i class="fa fa-pinterest social mr-4"></i></span>
+           <span><i class="fa fa-instagram social mr-4"></i></span>
+           <span><i class="fa fa-skype social"></i></span>
+         </div>
+         <div class="p-2 ">
+           <div class="name">
+             I am Aniket
+           </div>
+         </div>
+         <div class="p-2 ">
+           <div class="desc">
+              <span>{{value}}</span>
+           </div>
+         </div>
+         <div class="p-2 ">
+           <div class="down_arrow">
+              <span><a href="#about_me_page"><i class="fa fa-arrow-down down_arrow_icon"></i></a></span>
+           </div>
+         </div>
+      </div> 
+      <div class="home_image">
+       <img src="https://mattfarley.ca/img/hero.png">
+      </div> 
+  </div>
+</div> 
+<!---------------------------------------------------ABOUT ME------------------------------------------------------------>
+<div class="about_me" id="about_me_page">
+  <div class="title">About Me</div>
+  <div class="about_me_data">
+      <div class="row">
+           <div class="col-md-6">
+             <div class="abt_img">
+                         <img src="https://mattfarley.ca/img/mf-avatar.svg" >
+             </div>
+                
+           </div>
+           <div class="col-md-6">
+                   <div class="there_box"><span> Hi There</span>
+                    
+                   </div>
+                   <p class="about_me_p">Thank you for taking the time to visit. I develope stylish, clean and creative websites.I love to use my coding skills to make super fast, super fun websites. Get in touch for you project <a href="#contact"><span class="blinking">here.</span></a></p>
+                  <dl class="ts-column-count-2">
+                    <dt>Name:</dt>
+                    <dd>Pharakate Aniket</dd>
+                    <dt>Phone:</dt>
+                    <dd>+91 7276448001</dd>
+                    <dt>Email:</dt>
+                    <dd>aniketpharakate@gmail.com</dd>
+                    <dt>Twitter:</dt>
+                    <dd>Aniket@8001</dd>
+                  </dl>
+                  <div class="line"></div>
+                  <div class="contact_btns">
+                    <span class="contact_me_btn1"><a href="#contact">CONTACT ME <i class="fa fa-arrow-right"></i></a></span>
+                    <span class="contact_me_btn2"><a><i class="fa fa-download"></i>DOWNLOAD CV</a></span>
+                  </div>
+           </div>
+      </div>
+  </div>
+</div>
+<!---------------------------------------------------PROJECTS------------------------------------------------------------>
+<div class="port" id="portfolio">
+   <div class="port_title">
+     Portfolio
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4">
+           <div [class.pro_bounce]="pro_bounce">
+          <div class="card" style="width: 18rem;">
+            <div class="card_img">
+                <img class="card-img-top" style="width: 18rem;height: 200px;" src="https://cdn.demos.pixelgrade.com/wp-content/uploads/sites/5/2014/05/frontpage-menu.jpg" alt="Card image cap">
+                <span class="project_name_1">THE HEAVEN</span>
+            </div>
+            
+            <div class="card-body">
+                <div class="live">
+                <a><span><i class="fa fa-eye"></i></span>LIVE VERSION</a>
+                </div>
+                 <div class="live_2">
+                <a><span><i class="fa fa-github"></i></span>CODE LINK</a>
+                </div>  
+           </div>
+          </div>  
+         </div>
+        </div> 
+      </div>
+   </div>
+</div>
+<!---------------------------------------------------HIRE ME NOW------------------------------------------------------------>
+<div class="hire_me">
+    <h1>Let’s Work Together On Your Next Project!</h1>
+     <span class="contact_me_btn1 hire_btn"><a href="#contact">HIRE ME NOW</a></span>
+</div>
+<!---------------------------------------------------SKILS------------------------------------------------------------>
+<div class="skills" id="skills">
+   <div class="title">My Skills</div>
+   <div class="skill_rows">
+       <div class="row">
+         <div class="col-md-6">
+            <h4 class="skill_h4">Every Day is a New Challenge</h4>
+            <p class="skill_p1">In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo. Nulla in feugiat elit.</p>
+            <p class="skill_p1">Phasellus accumsan scelerisque dolor, quis mattis justo bibendum non. Nulla sollicitudin turpis in enim elementum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+            <div class="contact_me_btn2 skill_btn"><a href="#contact">CONTACT ME</a></div>
+         </div>
+         <div class="col-md-6">
+            <div class="skill_bars">
+              <h5>JavaScript</h5>
+              <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated pg1 bg-danger" style="width:40%;"></div>
+              </div>
+            </div>
+            <div>
+              <h5>Angular</h5>
+              <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated pg2 bg-danger" style="width:40%"></div>
+              </div>
+            </div>
+            <div>
+              <h5>HTML 5</h5>
+              <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated pg3 bg-danger" style="width:40%"></div>
+              </div>
+            </div>
+            <div>
+              <h5>CSS 3</h5>
+              <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated pg4 bg-danger" style="width:40%"></div>
+              </div>
+            </div>
+            <div>
+              <h5>Node JS</h5>
+              <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated pg5 bg-danger" style="width:40%"></div>
+              </div>
+            </div>  
+         </div>
+       </div>
+   </div>
+</div>
+<!---------------------------------------------------CONTACT ME------------------------------------------------------------>
+<div class="contact_me_page" id="contact">
+  <div class="container">
+     
+     <div class="there_box get_in_touch_1">
+         <span>Get In Touch</span>
+     </div>
+     <div class="row">
+        <div class="col-md-3">
+          <div [class.bounce]="bounce">
+            <div class="add_image"><i class="fal fa-map-marker-alt"></i></div>
+            <div class="add">Address</div>
+            <div class="skill_p1 add1">732/4 Savitri<br>Kolhapur 416007</div>
+           </div> 
+        </div>
+        <div class="col-md-3">
+          <div [class.bounce1]="bounce">
+              <div></div>
+            <div class="add">Phone</div>
+            <div class="skill_p1 add1">+91 7276448002<br>+91 7020274593</div>
+          </div>  
+        </div>
+        <div class="col-md-3">
+          <div [class.bounce2]="bounce">
+              <div></div>
+            <div class="add">Email</div>
+            <div class="skill_p1 add1">aniketpharakate@gmail.com</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+               <div [class.bounce3]="bounce">
+               <div></div>
+            <div class="add">Facebook Chat</div>
+            <div class="skill_p1 add1">aniketpharakate</div>
+               </div> 
+        </div>
+      </div>  
+      <div class="row form_row">
+         <div class="col-md-4">
+             <div class="let_con">Let's Connect</div>
+             <div class="icon_details">
+                <div class="contact_icon">
+                   <a><i class="fa fa-facebook icon_mod"></i><span class="icon_name">Facebook</span></a>
+                </div>
+                <div class="contact_icon">
+                   <a><i class="fa fa-twitter icon_mod"></i><span class="icon_name">Twitter</span></a>
+                </div>
+                <div class="contact_icon">
+                   <a><i class="fa fa-instagram icon_mod"></i><span class="icon_name">Instagram</span></a>
+                </div>
+                <div class="contact_icon">
+                   <a><i class="fa fa-skype icon_mod"></i><span class="icon_name">Skype</span></a>
+                </div>
+                <div class="contact_icon">
+                   <a><i class="fa fa-pinterest icon_mod"></i><span class="icon_name">Pinterest</span></a>
+                </div>
+             </div>    
+         </div>
+         <div class="col-md-8">
+              <div class="let_con">Send Me a Message</div>
+               <div class="icon_details">
+                 <form (ngSubmit)="f.form.valid && onSubmit(f)" #f="ngForm" novalidate name="form">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Name *</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="Name" name="name" [(ngModel)]='data.name' required #name="ngModel" [ngClass]="{'is-invalid': f.submitted && name.invalid}">
+                <div class="invalid-feedback">
+                               Please enter name.
+                </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Email *</label>
+      <input type="email" class="form-control" id="inputPassword4" placeholder="Email" name="email" [(ngModel)]='data.email' required #email="ngModel"[ngClass]="{'is-invalid': f.submitted && email.invalid}">
+                <div class="invalid-feedback">
+                               Please enter valid email.
+                </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Subject *</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Subject" name="subject" [(ngModel)]='data.subject' required #subject="ngModel" [ngClass]="{'is-invalid': f.submitted && subject.invalid}">
+                <div class="invalid-feedback">
+                               Please enter subject.
+                </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Message *</label>
+    <textarea type="text" class="form-control message" id="inputAddress2" placeholder="Message" name="message"      
+    [(ngModel)]='data.message' required #message="ngModel" [ngClass]="{'is-invalid': f.submitted && message.invalid}"></textarea>
+                <div class="invalid-feedback">
+                               Please enter message.
+                </div>
+  </div>
+  <button type="submit" class="btn" >SEND A MESSAGE</button>
+  
+</form>
+            </div> 
+         </div>
+      </div>
+     
+  </div>
+</div>
+<!---------------------------------------------------footer-------->
+<div class="footer">
+    © 2019 ThemeStarz, All Rights Reserved
+</div>
+</div>
